@@ -15,3 +15,5 @@
 !/assets/screenshots/conversation-demo.png
 /assets/evidence/*
 !/assets/evidence/metrics-2026-11-12.json
+!/assets/evidence/operations-2026-11-12.json
+!/assets/evidence/business-snapshots.json

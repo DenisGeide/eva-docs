@@ -1,0 +1,60 @@
+{
+  "schema": "toventra-public-business-snapshots-v1",
+  "timezone": "Europe/Moscow",
+  "publication_date": "2026-11-12",
+  "note": "Different observation dates and populations. Not a fresh physical inventory; no customer, order or real product identifiers included.",
+  "catalogue": {
+    "observed_at": "2026-11-11T22:34:54.833452+00:00",
+    "source_sha256": "3387343c72adeda694de0acab96138123700421e40453e344686f566624b3d16",
+    "source_fields": [
+      "rows",
+      "summary"
+    ],
+    "listings": 1937,
+    "distinct_nonempty_product_codes": 1075,
+    "rows_without_product_code": 470,
+    "active_listings": 751,
+    "active_distinct_product_codes": 649,
+    "complete": false,
+    "unknown_quantity_inactive": 74,
+    "current_physical_stock_units": null
+  },
+  "historical_purchase_payments": {
+    "observed_at": "2026-10-25T21:25:03+03:00",
+    "source_sha256": "a5777d71115ebd5b7a5699e48449daddf9e4a5629170af5a74124c50d0ba124c",
+    "source_field": "performance.profit_30d.purchase_payments_cents",
+    "period_from": "2026-09-25",
+    "period_to_inclusive": "2026-10-24",
+    "amount_cents": 15300000,
+    "amount_rub": 153000.0,
+    "meaning": "Recorded paid purchase expenses for this historical window, not lifetime procurement or stock cost."
+  },
+  "historical_orders": {
+    "observed_at": "2026-10-25T21:25:03+03:00",
+    "source_sha256": "a5777d71115ebd5b7a5699e48449daddf9e4a5629170af5a74124c50d0ba124c",
+    "period_from": "2026-09-06",
+    "period_to": "2026-10-25",
+    "orders": 738,
+    "amount_cents": 53333000,
+    "meaning": "All-state recorded order amount for a different historical window; not an Eva attribution or revenue comparison."
+  },
+  "archived_inventory": {
+    "archive_date": "2026-10-12",
+    "exact_observed_at": null,
+    "source_sha256": "34452a025176599b6dd7819de380376d9a2baf37c337d2527c5465eb7af63d99",
+    "source_field": "summary",
+    "catalogue_cards": 669,
+    "accounting_units": 2950,
+    "valuation_basis": "catalog_stock",
+    "purchase_valuation": {
+      "amount_cents": 23581801,
+      "amount_rub": 235818.01,
+      "complete": false,
+      "covered_units": 2704,
+      "missing_products": 46,
+      "missing_units": 246,
+      "zero_price_units": 400
+    },
+    "meaning": "Historical accounting inventory, not physical verification or present stock. Missing and zero-price records are preserved."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": "toventra-public-operations-v1",
+  "captured_at": "2026-11-12T01:55:28.186207+00:00",
+  "period_start": "2026-11-02T00:00:00+03:00",
+  "period_end": "2026-11-12T04:55:28.186207+03:00",
+  "timezone": "Europe/Moscow",
+  "source_sha256": "2105082f8bc79407dbf192af7771f3f41a33cc5d85409dd801df4b0cc3ef412f",
+  "method": "Selected aggregates from an existing READ ONLY / REPEATABLE READ PostgreSQL collector snapshot. No new live query or provider sweep for this documentation update. Exact native attempt, provider message, chat, text/type and timestamp matching required.",
+  "metrics": {
+    "chats_with_confirmed_eva_replies": 546,
+    "confirmed_eva_reply_turns": 840,
+    "confirmed_eva_text_messages": 840,
+    "first_response_pairs": 825,
+    "mean_first_reply_seconds": 4721.185,
+    "median_first_reply_seconds": 269.0,
+    "p90_reply_seconds": 7727.0,
+    "night_reply_turns_00_06_msk": 121,
+    "night_replied_chats_00_06_msk": 97,
+    "chats_with_no_recorded_manual_outgoing_in_period": 365,
+    "orders_created_in_period": 266,
+    "night_orders_created_00_06_msk": 30,
+    "order_total_sum_rub_all_states": 173665.0,
+    "order_total_known_count": 266,
+    "order_total_missing_count": 0,
+    "order_total_sum_rub_excluding_canceled": 160744.0,
+    "auto_images_confirmed_in_history": 22,
+    "chats_with_confirmed_auto_images": 5
+  },
+  "order_status_counts_period": {
+    "ready_to_ship": 44,
+    "in_transit": 73,
+    "on_return": 13,
+    "delivered": 59,
+    "canceled": 23,
+    "closed": 54
+  },
+  "scope": {
+    "native_chats": 6728,
+    "all_native_orders": 1205,
+    "all_exact_auto_decisions": 6001
+  },
+  "limitations": [
+    "Confirmed reply means exact native attempt and provider message ID/text in stored history, not proof that every question is resolved.",
+    "Receipt timestamps with whole-second provider precision allow up to one second for subsecond local attempt timestamps; exact chat, ID and text still required.",
+    "Mean latency includes backlog and recovery delays; no arbitrary trimming. First-response metric additionally excludes pairs with an intervening outgoing text.",
+    "Orders and sums belong to the shop, not sales causally attributable to Eva.",
+    "Order total is accounting order amount, not recognized revenue or profit.",
+    "No recorded manual outgoing is not proof that the owner was physically absent.",
+    "Stored native history may not cover unknown old provider dialogs. No full API sweep performed."
+  ],
+  "recognized_shop_revenue_rub": null,
+  "attributable_sales_uplift_percent": null
+}
