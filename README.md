@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/toventra-logo.png" alt="Toventra" width="320">
+  <img src="assets/toventra-symbol.png" alt="Toventra" width="112" height="112">
 </p>
 
 <h1 align="center">Toventra — больше внимания покупателям.<br>Меньше рутины продавцу.</h1>
