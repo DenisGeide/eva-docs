@@ -1,0 +1,16 @@
+# Allow only documentation and individually reviewed attachments.
+/*
+!/*.md
+!/.gitignore
+!/.gitattributes
+!/assets/
+/assets/*
+!/assets/eva-logo.png
+!/assets/screenshots/
+!/assets/evidence/
+/assets/screenshots/*
+!/assets/screenshots/README.md
+!/assets/screenshots/stock-overview-archive.png
+!/assets/screenshots/conversation-demo.png
+/assets/evidence/*
+!/assets/evidence/metrics-2026-11-12.json

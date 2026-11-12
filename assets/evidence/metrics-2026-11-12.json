@@ -1,0 +1,47 @@
+{
+  "schema": "eva-public-aggregate-snapshot-v1",
+  "snapshot_date": "2026-11-12",
+  "timezone": "Europe/Moscow",
+  "method": "Selected aggregate fields read from existing saved reports; no live production query performed for this publication.",
+  "metrics": [
+    {
+      "name": "dialogs_in_native_registry",
+      "value": 6727,
+      "observed_at": "2026-11-12T01:01:20+03:00",
+      "source_field": "native_registry_rows",
+      "source_sha256": "34aa00ab037531403453c1f4aa0bf769b93b35067756498c8f502a74b433c978",
+      "meaning": "Registry rows across states, not dialogs answered or resolved."
+    },
+    {
+      "name": "orders_in_accounting",
+      "value": 1205,
+      "observed_at": "2026-11-12T01:22:02+03:00",
+      "source_field": "runtime.orders_summary.total",
+      "source_sha256": "3387343c72adeda694de0acab96138123700421e40453e344686f566624b3d16",
+      "meaning": "All recorded orders across states, not attributable or completed sales."
+    },
+    {
+      "name": "listings_in_reconciliation_snapshot",
+      "value": 1937,
+      "observed_at": "2026-11-12T01:34:54+03:00",
+      "source_field": "summary.checked",
+      "source_sha256": "3387343c72adeda694de0acab96138123700421e40453e344686f566624b3d16",
+      "meaning": "Snapshot rows, not proof of a complete or physical stock audit."
+    }
+  ],
+  "coverage": {
+    "stock_reconciliation_complete": false,
+    "quantity_unknown_inactive": 74,
+    "quantity_unknown_active": 0,
+    "unknown_quantity_is_zero": false,
+    "native_registry_count_proves_complete_api_history_coverage": false
+  },
+  "excluded_claims": [
+    "revenue",
+    "sales_uplift",
+    "conversion",
+    "average_response_time",
+    "guaranteed_uptime",
+    "all_questions_resolved"
+  ]
+}
