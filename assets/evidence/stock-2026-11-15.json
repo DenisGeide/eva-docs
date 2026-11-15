@@ -1,0 +1,13 @@
+{
+  "schema": "eva-public-stock-footprint-v1",
+  "captured_at": "2026-11-15T20:25:49.612306+00:00",
+  "catalog_checked_at": "2026-11-15T20:06:02.554028+00:00",
+  "registry_rows": 2007,
+  "active": 789,
+  "inactive": 1218,
+  "complete": false,
+  "quantity_unknown": 12,
+  "unmapped_active": 2,
+  "active_zero_both": 3,
+  "meaning": "Retained reconciliation footprint, not a fully confirmed physical inventory. Targeted checks do not refresh every row."
+}
