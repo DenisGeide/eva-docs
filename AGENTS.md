@@ -1,5 +1,9 @@
 # Documentation-only repository
 
+## Owner source privacy restriction, 17 November 2026
+
+The owner explicitly forbids publishing product source code to GitHub. This repository is public documentation only: descriptions, reviewed images and approved aggregate evidence. Never upload application or promotional-site implementation, executable snippets, source archives, deployment scripts or credentials. GitHub's automatically generated release archives must contain documentation only. Explain their standard "Source code" label in release notes; it does not authorize adding any implementation.
+
 Publish only confirmed, human-readable documentation, approved images and minimal aggregate evidence.
 Never add production source, configuration, databases, credentials, personal/customer data, private addresses or absolute paths.
 Do not run, import, connect to or change production to update these pages.
